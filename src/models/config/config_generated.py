@@ -209,6 +209,7 @@ class GeneratedConfig:
     # Cookies
     javdb = r''
     javbus = r''
+    fc2 = r''
 
     # other
     show_web_log = r'off'
@@ -432,6 +433,7 @@ theporndb_api_token = {theporndb_api_token}
 [Cookies]
 javdb = {javdb}
 javbus = {javbus}
+fc2 = {fc2}
 # cookies存在有效期，记得更新
 
 [other]

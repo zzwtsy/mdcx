@@ -225,6 +225,7 @@ theporndb_api_token = {theporndb_api_token}
 [Cookies]
 javdb = {javdb}
 javbus = {javbus}
+fc2 = {fc2}
 # cookies存在有效期，记得更新
 
 [other]

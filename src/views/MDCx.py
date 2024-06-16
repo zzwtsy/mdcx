@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'MDCx.ui'
+# Form implementation generated from reading ui file 'src\views\MDCx.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -291,6 +291,7 @@ class Ui_MDCx(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
+        font.setWeight(50)
         self.treeWidget_number.headerItem().setFont(0, font)
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_number)
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_number)
@@ -463,7 +464,7 @@ class Ui_MDCx(object):
         self.pushButton_show_hide_logs.setMouseTracking(True)
         self.pushButton_show_hide_logs.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../MDCx-py-20220407/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap("src\\views\\../../MDCx-py-20220407/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         self.pushButton_show_hide_logs.setIcon(icon)
         self.pushButton_show_hide_logs.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_show_hide_logs.setCheckable(False)
@@ -9322,67 +9323,18 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -272, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_10.setGeometry(QtCore.QRect(30, 350, 701, 531))
+        self.groupBox_10.setGeometry(QtCore.QRect(30, 350, 701, 561))
         self.groupBox_10.setStyleSheet("font:\"Courier\";")
         self.groupBox_10.setObjectName("groupBox_10")
         self.gridLayoutWidget_10 = QtWidgets.QWidget(self.groupBox_10)
-        self.gridLayoutWidget_10.setGeometry(QtCore.QRect(20, 30, 661, 280))
+        self.gridLayoutWidget_10.setGeometry(QtCore.QRect(20, 30, 661, 347))
         self.gridLayoutWidget_10.setObjectName("gridLayoutWidget_10")
         self.gridLayout_10 = QtWidgets.QGridLayout(self.gridLayoutWidget_10)
         self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_10.setObjectName("gridLayout_10")
-        self.plainTextEdit_cookie_javbus = QtWidgets.QPlainTextEdit(self.gridLayoutWidget_10)
-        self.plainTextEdit_cookie_javbus.setMinimumSize(QtCore.QSize(300, 80))
-        self.plainTextEdit_cookie_javbus.setAccessibleDescription("")
-        self.plainTextEdit_cookie_javbus.setStyleSheet(" border: 1px solid rgba(0,0,0, 50);\n"
-" border-radius: 1px;\n"
-"font: \"Courier\";")
-        self.plainTextEdit_cookie_javbus.setObjectName("plainTextEdit_cookie_javbus")
-        self.gridLayout_10.addWidget(self.plainTextEdit_cookie_javbus, 2, 1, 1, 1)
-        self.plainTextEdit_cookie_javdb = QtWidgets.QPlainTextEdit(self.gridLayoutWidget_10)
-        self.plainTextEdit_cookie_javdb.setMinimumSize(QtCore.QSize(300, 80))
-        self.plainTextEdit_cookie_javdb.setStyleSheet(" border: 1px solid rgba(0,0,0, 50);\n"
-" border-radius: 1px;\n"
-"font: \"Courier\";")
-        self.plainTextEdit_cookie_javdb.setObjectName("plainTextEdit_cookie_javdb")
-        self.gridLayout_10.addWidget(self.plainTextEdit_cookie_javdb, 0, 1, 1, 1)
-        self.horizontalLayout_151 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_151.setObjectName("horizontalLayout_151")
-        self.pushButton_check_javdb_cookie = QtWidgets.QPushButton(self.gridLayoutWidget_10)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_check_javdb_cookie.sizePolicy().hasHeightForWidth())
-        self.pushButton_check_javdb_cookie.setSizePolicy(sizePolicy)
-        self.pushButton_check_javdb_cookie.setObjectName("pushButton_check_javdb_cookie")
-        self.horizontalLayout_151.addWidget(self.pushButton_check_javdb_cookie)
-        self.label_javdb_cookie_result = QtWidgets.QLabel(self.gridLayoutWidget_10)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_javdb_cookie_result.sizePolicy().hasHeightForWidth())
-        self.label_javdb_cookie_result.setSizePolicy(sizePolicy)
-        self.label_javdb_cookie_result.setMinimumSize(QtCore.QSize(0, 0))
-        self.label_javdb_cookie_result.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.label_javdb_cookie_result.setText("")
-        self.label_javdb_cookie_result.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_javdb_cookie_result.setObjectName("label_javdb_cookie_result")
-        self.horizontalLayout_151.addWidget(self.label_javdb_cookie_result)
-        self.gridLayout_10.addLayout(self.horizontalLayout_151, 1, 1, 1, 1)
-        self.label_425 = QtWidgets.QLabel(self.gridLayoutWidget_10)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_425.sizePolicy().hasHeightForWidth())
-        self.label_425.setSizePolicy(sizePolicy)
-        self.label_425.setMinimumSize(QtCore.QSize(0, 30))
-        self.label_425.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.label_425.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_425.setObjectName("label_425")
-        self.gridLayout_10.addWidget(self.label_425, 2, 0, 1, 1)
         self.label_45 = QtWidgets.QLabel(self.gridLayoutWidget_10)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -9394,6 +9346,17 @@ class Ui_MDCx(object):
         self.label_45.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_45.setObjectName("label_45")
         self.gridLayout_10.addWidget(self.label_45, 0, 0, 1, 1)
+        self.label_425 = QtWidgets.QLabel(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_425.sizePolicy().hasHeightForWidth())
+        self.label_425.setSizePolicy(sizePolicy)
+        self.label_425.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_425.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_425.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_425.setObjectName("label_425")
+        self.gridLayout_10.addWidget(self.label_425, 2, 0, 1, 1)
         self.horizontalLayout_152 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_152.setObjectName("horizontalLayout_152")
         self.pushButton_check_javbus_cookie = QtWidgets.QPushButton(self.gridLayoutWidget_10)
@@ -9417,8 +9380,88 @@ class Ui_MDCx(object):
         self.label_javbus_cookie_result.setObjectName("label_javbus_cookie_result")
         self.horizontalLayout_152.addWidget(self.label_javbus_cookie_result)
         self.gridLayout_10.addLayout(self.horizontalLayout_152, 3, 1, 1, 1)
+        self.plainTextEdit_cookie_javdb = QtWidgets.QPlainTextEdit(self.gridLayoutWidget_10)
+        self.plainTextEdit_cookie_javdb.setMinimumSize(QtCore.QSize(300, 80))
+        self.plainTextEdit_cookie_javdb.setStyleSheet(" border: 1px solid rgba(0,0,0, 50);\n"
+" border-radius: 1px;\n"
+"font: \"Courier\";")
+        self.plainTextEdit_cookie_javdb.setObjectName("plainTextEdit_cookie_javdb")
+        self.gridLayout_10.addWidget(self.plainTextEdit_cookie_javdb, 0, 1, 1, 1)
+        self.label_129 = QtWidgets.QLabel(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_129.sizePolicy().hasHeightForWidth())
+        self.label_129.setSizePolicy(sizePolicy)
+        self.label_129.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_129.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_129.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_129.setObjectName("label_129")
+        self.gridLayout_10.addWidget(self.label_129, 4, 0, 1, 1)
+        self.plainTextEdit_cookie_javbus = QtWidgets.QPlainTextEdit(self.gridLayoutWidget_10)
+        self.plainTextEdit_cookie_javbus.setMinimumSize(QtCore.QSize(300, 80))
+        self.plainTextEdit_cookie_javbus.setAccessibleDescription("")
+        self.plainTextEdit_cookie_javbus.setStyleSheet(" border: 1px solid rgba(0,0,0, 50);\n"
+" border-radius: 1px;\n"
+"font: \"Courier\";")
+        self.plainTextEdit_cookie_javbus.setObjectName("plainTextEdit_cookie_javbus")
+        self.gridLayout_10.addWidget(self.plainTextEdit_cookie_javbus, 2, 1, 1, 1)
+        self.horizontalLayout_151 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_151.setObjectName("horizontalLayout_151")
+        self.pushButton_check_javdb_cookie = QtWidgets.QPushButton(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_check_javdb_cookie.sizePolicy().hasHeightForWidth())
+        self.pushButton_check_javdb_cookie.setSizePolicy(sizePolicy)
+        self.pushButton_check_javdb_cookie.setObjectName("pushButton_check_javdb_cookie")
+        self.horizontalLayout_151.addWidget(self.pushButton_check_javdb_cookie)
+        self.label_javdb_cookie_result = QtWidgets.QLabel(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_javdb_cookie_result.sizePolicy().hasHeightForWidth())
+        self.label_javdb_cookie_result.setSizePolicy(sizePolicy)
+        self.label_javdb_cookie_result.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_javdb_cookie_result.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_javdb_cookie_result.setText("")
+        self.label_javdb_cookie_result.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_javdb_cookie_result.setObjectName("label_javdb_cookie_result")
+        self.horizontalLayout_151.addWidget(self.label_javdb_cookie_result)
+        self.gridLayout_10.addLayout(self.horizontalLayout_151, 1, 1, 1, 1)
+        self.plainTextEdit_cookie_fc2 = QtWidgets.QPlainTextEdit(self.gridLayoutWidget_10)
+        self.plainTextEdit_cookie_fc2.setMinimumSize(QtCore.QSize(300, 80))
+        self.plainTextEdit_cookie_fc2.setAccessibleDescription("")
+        self.plainTextEdit_cookie_fc2.setStyleSheet(" border: 1px solid rgba(0,0,0, 50);\n"
+" border-radius: 1px;\n"
+"font: \"Courier\";")
+        self.plainTextEdit_cookie_fc2.setObjectName("plainTextEdit_cookie_fc2")
+        self.gridLayout_10.addWidget(self.plainTextEdit_cookie_fc2, 4, 1, 1, 1)
+        self.horizontalLayout_156 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_156.setObjectName("horizontalLayout_156")
+        self.pushButton_check_fc2_cookie = QtWidgets.QPushButton(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_check_fc2_cookie.sizePolicy().hasHeightForWidth())
+        self.pushButton_check_fc2_cookie.setSizePolicy(sizePolicy)
+        self.pushButton_check_fc2_cookie.setObjectName("pushButton_check_fc2_cookie")
+        self.horizontalLayout_156.addWidget(self.pushButton_check_fc2_cookie)
+        self.label_fc2_cookie_result = QtWidgets.QLabel(self.gridLayoutWidget_10)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_fc2_cookie_result.sizePolicy().hasHeightForWidth())
+        self.label_fc2_cookie_result.setSizePolicy(sizePolicy)
+        self.label_fc2_cookie_result.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_fc2_cookie_result.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_fc2_cookie_result.setText("")
+        self.label_fc2_cookie_result.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_fc2_cookie_result.setObjectName("label_fc2_cookie_result")
+        self.horizontalLayout_156.addWidget(self.label_fc2_cookie_result)
+        self.gridLayout_10.addLayout(self.horizontalLayout_156, 5, 1, 1, 1)
         self.label_75 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_75.setGeometry(QtCore.QRect(60, 330, 611, 141))
+        self.label_75.setGeometry(QtCore.QRect(60, 381, 611, 141))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -9431,7 +9474,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(130, 480, 430, 21))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(130, 531, 430, 21))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -9441,7 +9484,7 @@ class Ui_MDCx(object):
         self.label_get_cookie_url.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.label_get_cookie_url.setObjectName("label_get_cookie_url")
         self.label_7 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_7.setGeometry(QtCore.QRect(60, 480, 71, 21))
+        self.label_7.setGeometry(QtCore.QRect(60, 531, 71, 21))
         self.label_7.setStyleSheet("color: rgb(8, 128, 128);")
         self.label_7.setObjectName("label_7")
         self.groupBox_28 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
@@ -9626,7 +9669,7 @@ class Ui_MDCx(object):
         self.label_411.setObjectName("label_411")
         self.gridLayout_9.addWidget(self.label_411, 6, 1, 1, 1)
         self.groupBox_44 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_44.setGeometry(QtCore.QRect(30, 1100, 701, 281))
+        self.groupBox_44.setGeometry(QtCore.QRect(30, 1120, 701, 281))
         self.groupBox_44.setStyleSheet("font:\"Courier\";")
         self.groupBox_44.setObjectName("groupBox_44")
         self.label_110 = QtWidgets.QLabel(self.groupBox_44)
@@ -9687,7 +9730,7 @@ class Ui_MDCx(object):
         self.label_324.setWordWrap(True)
         self.label_324.setObjectName("label_324")
         self.groupBox_14 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_14.setGeometry(QtCore.QRect(30, 900, 701, 181))
+        self.groupBox_14.setGeometry(QtCore.QRect(30, 920, 701, 181))
         self.groupBox_14.setStyleSheet("font:\"Courier\";")
         self.groupBox_14.setObjectName("groupBox_14")
         self.gridLayoutWidget_11 = QtWidgets.QWidget(self.groupBox_14)
@@ -10853,8 +10896,8 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(3)
-        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
+        self.tabWidget.setCurrentIndex(10)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
@@ -10887,34 +10930,25 @@ class Ui_MDCx(object):
         self.label_file_path.setText(_translate("MDCx", "视频目录设置：【设置】-【目录】-【待刮削视频目录】。程序将刮削该目录及子目录的所有文件。"))
         self.pushButton_select_media_folder.setText(_translate("MDCx", "选择目录"))
         self.textBrowser_log_main_2.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">       </span></p></body></html>"))
         self.pushButton_start_cap2.setText(_translate("MDCx", "开始"))
         self.textBrowser_log_main.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">       </span></p></body></html>"))
         self.pushButton_view_failed_list.setText(_translate("MDCx", "失败 0"))
         self.textBrowser_log_main_3.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">       </span></p></body></html>"))
         self.pushButton_scraper_failed_list.setText(_translate("MDCx", "当有失败任务时，点击可以一键刮削当前失败列表"))
         self.pushButton_check_net.setText(_translate("MDCx", "开始检测"))
         self.groupBox_7.setTitle(_translate("MDCx", "单文件刮削（指定某个文件的番号网址进行刮削，当存在相同番号时可用这个）"))
@@ -11781,14 +11815,18 @@ class Ui_MDCx(object):
         self.checkBox_actor_photo_kodi.setText(_translate("MDCx", "刮削结束后自动创建"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MDCx", " 演员 "))
         self.groupBox_10.setTitle(_translate("MDCx", "Cookie设置"))
-        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "美国节点需要填写，其他节点一般不需要填写，除非提示需要填写。"))
-        self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "刮削FC2需要填写"))
-        self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "检查cookie"))
-        self.label_425.setText(_translate("MDCx", "javbus：\n"
-"（登录状态）"))
         self.label_45.setText(_translate("MDCx", "javdb：\n"
 "（登录状态）"))
+        self.label_425.setText(_translate("MDCx", "javbus：\n"
+"（登录状态）"))
         self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "检查cookie"))
+        self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "刮削FC2需要填写"))
+        self.label_129.setText(_translate("MDCx", "fc2：\n"
+"（登录状态）"))
+        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "美国节点需要填写，其他节点一般不需要填写，除非提示需要填写。"))
+        self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "检查cookie"))
+        self.plainTextEdit_cookie_fc2.setPlaceholderText(_translate("MDCx", "通常情况下，无需填写，除非访问 https://adult.contents.fc2.com 时需要登录。  "))
+        self.pushButton_check_fc2_cookie.setText(_translate("MDCx", "检查cookie"))
         self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie 获取方法：<br>\n"
 "1，使用 Chrome 打开目标网站并登录，在页面空白位置点击鼠标右键，选择 「检查」 ；<br>\n"
 "2，右侧弹窗顶部选择：「网络」 -> 「全部」，然后刷新当前页面；<br>\n"
@@ -11875,164 +11913,155 @@ class Ui_MDCx(object):
         self.label_241.setText(_translate("MDCx", "当前配置："))
         self.pushButton_save_new_config.setText(_translate("MDCx", "另存为"))
         self.textBrowser_show_success_list.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">        </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">            </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">        </span></p></body></html>"))
         self.pushButton_success_list_close.setText(_translate("MDCx", "关闭"))
         self.pushButton_success_list_clear.setText(_translate("MDCx", "清空列表"))
         self.pushButton_success_list_save.setText(_translate("MDCx", "保存"))
         self.label_success_title.setText(_translate("MDCx", "已刮削成功文件列表"))
         self.textBrowser_show_tips.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">        </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">            </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">        </span></p></body></html>"))
         self.pushButton_show_tips_close.setText(_translate("MDCx", "关闭"))
         self.label_show_tips_title.setText(_translate("MDCx", "说明"))
         self.textBrowser_about.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· Movie_Data_Capture 项目地址：https://github.com/yoshiko2/Movie_Data_Capture</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· AVDC-GUI 项目地址：https://github.com/moyy996/AVDC</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· MDCx-docker 项目地址：https://github.com/northsea4/mdcx-docker</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">使用说明 （内容来自 AVDC-GUI ：https://github.com/moyy996/AVDC ）</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">目录</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">一、功能简介</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">二、项目简介</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">三、常见番号命名参考</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">四、设置说明</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">一、功能简介</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">           日本电影元数据抓取工具/刮削器，配合本地影片管理软件EMBY,KODI，PLEX等管理本地影片，该软件起到分类与元数据抓取作用，利用元数据信息来分类，供本地影片分类整理使用。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">二、项目简介</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Gui made by moyy996，Core made by yoshiko2</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 命令行版项目地址：https://github.com/yoshiko2/Movie_Data_Capture</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> GUI版项目地址：https://github.com/moyy996/AVDC</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> GUI版EXE下载地址：https://github.com/moyy996/AVDC/releases</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">三、常见番号命名参考</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">不区分大小写、刮削前尽量命名规范！！！！</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.1.标准有码</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus:SSNI-111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Dmm：ssni00111</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.2.无码</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus、Avsox:111111-1111、111111_111、HEYZO-1111、n1111</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.3.素人</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Mgstage:259LUXU-1111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb:LUXU-1111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Fc2club:FC2-111111、FC2-PPV-111111、FC2PPV-111111</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.4.欧美</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus:sexart.11.11.11(系列.年.月.日)</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.5.自带字幕影片</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以把电影命名为类似ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 的规则。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.6.多集影片</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以把多集电影按照集数后缀命名为类似ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4,           abp-xxx-CD1-C.mp4的规则，只要含有-CDn/-cdn类似命名规则，即可使用分集功能.**不支持-A -B -1 -2,容易跟字幕的-C混淆**.</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.7.多集、字幕顺序</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> abp-xxx-CD1-C.mp4，分集在前，字幕在后，字幕必须与拓展名靠近，-C.mp4.</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.8.外挂字幕文件</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 字幕文件名必须与影片文件名一致，才可以一起移动到新目录，目前支持srt ass sub类型的字幕文件。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">四、设置说明</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">详细的说明： https://github.com/moyy996/AVDC/blob/master/README.md</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.1.刮削模式/整理模式</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、刮削模式：通过番号刮削数据，包括元数据、封面图、缩略图、背景图。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、整理模式：仅根据女优把电影命名为番号并分类到女优名称的文件夹下。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.2.软链接模式：使用此模式，要以管理员身份运行。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 刮削完不移动视频，而是在相应目录创建软链接（类似于快捷方式），方便PT下载完既想刮削又想继续上传的仓鼠党同志。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 但是，只能在媒体库展示，不能在媒体库播放。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.3.调试模式</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 输出番号的元数据，包括封面，导演，演员，简介等。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.4.排除目录</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 在多层目录刮削时排除所填目录。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.5.视频目录</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 要整理的视频的目录，会遍历此目录下的所有视频，包括子目录中。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.6.命名规则</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、目录命名：存放视频数据的目录名，支持多层目录，支持自定义符号，例：[actor]/studio/number-【title】。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、视频标题（媒体库中）：nfo中的标题命名。例：number-[title]。可以自定义符号。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、视频标题（本地文件）：本地视频、图片的命名。例：number-[title]。可以自定义符号。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">           4、可选项为title（片名）、actor（演员）、studio（制作商）、director（导演）、release（发售日）、year（发行年份）、number（番号）、runtime（时长）、series（系列）、publisher（发行商）</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.7.代理设置</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、代理</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> proxy=127.0.0.1:1080</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> proxy行设置本地代理地址和端口，支持Shadowxxxx/X,V2XXX本地代理端口，代理软件开全局模式           ,建议使用日本代理。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果一直报Connect Failed! Please check your Proxy or           Network!错误，请检查端口号是否正确，或者把proxy=后面的地址和端口删除，并开启代理软件全局模式，或者重启电脑，代理软件，网卡。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、连接超时重试设置</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> timeout=10 </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 10为超时重试时间 单位：秒，可选范围3-10</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、连接重试次数设置</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> retry=3 </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3即为重试次数，可选范围2-5</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.8.媒体库选择</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果是PLEX，请安装插件：XBMCnfoMoviesImporter</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.9.排除指定字符和目录，字符串</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、排除字符:指定字符删除，例如排除字符： \\()，删除创建文件夹时的\\()字符</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、排除目录:指定目录，例如排除目录： failed,JAV_output，多目录刮削时跳过failed,JAV_output</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、排除字符串:提取番号时，先删除指定字符串，提高成功率，字符串之间用\',\'隔开。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.10.网站选择</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以使用所有网站，或者指定网站（avsox,javbus,dmm,javdb,fc2club，mgstage）进行刮削。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 仅使用javdb进行刮削，尽量不要用，刮削30左右会被JAVDB封IP一段时间。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.11.保存日志</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 开启后日志保存在程序目录的Log目录下的txt文件内，每次运行会产生一个txt文件，txt文件可以删除，不影响程序运行。</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.12.失败后移动文件</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果刮削不到影片信息，可选择不移动视频，或者自动移动到失败输出目录中。</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>       </p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· Movie_Data_Capture 项目地址：https://github.com/yoshiko2/Movie_Data_Capture</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· AVDC-GUI 项目地址：https://github.com/moyy996/AVDC</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· MDCx-docker 项目地址：https://github.com/northsea4/mdcx-docker</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">使用说明 （内容来自 AVDC-GUI ：https://github.com/moyy996/AVDC ）</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">目录</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">一、功能简介</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">二、项目简介</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">三、常见番号命名参考</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">四、设置说明</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">一、功能简介</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">           日本电影元数据抓取工具/刮削器，配合本地影片管理软件EMBY,KODI，PLEX等管理本地影片，该软件起到分类与元数据抓取作用，利用元数据信息来分类，供本地影片分类整理使用。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">二、项目简介</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Gui made by moyy996，Core made by yoshiko2</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 命令行版项目地址：https://github.com/yoshiko2/Movie_Data_Capture</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> GUI版项目地址：https://github.com/moyy996/AVDC</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> GUI版EXE下载地址：https://github.com/moyy996/AVDC/releases</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">三、常见番号命名参考</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">不区分大小写、刮削前尽量命名规范！！！！</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.1.标准有码</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus:SSNI-111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Dmm：ssni00111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.2.无码</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus、Avsox:111111-1111、111111_111、HEYZO-1111、n1111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.3.素人</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Mgstage:259LUXU-1111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb:LUXU-1111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Fc2club:FC2-111111、FC2-PPV-111111、FC2PPV-111111</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.4.欧美</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> Javdb、Javbus:sexart.11.11.11(系列.年.月.日)</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.5.自带字幕影片</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以把电影命名为类似ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 的规则。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.6.多集影片</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以把多集电影按照集数后缀命名为类似ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4,           abp-xxx-CD1-C.mp4的规则，只要含有-CDn/-cdn类似命名规则，即可使用分集功能.**不支持-A -B -1 -2,容易跟字幕的-C混淆**.</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.7.多集、字幕顺序</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> abp-xxx-CD1-C.mp4，分集在前，字幕在后，字幕必须与拓展名靠近，-C.mp4.</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.8.外挂字幕文件</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 字幕文件名必须与影片文件名一致，才可以一起移动到新目录，目前支持srt ass sub类型的字幕文件。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">四、设置说明</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">详细的说明： https://github.com/moyy996/AVDC/blob/master/README.md</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.1.刮削模式/整理模式</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、刮削模式：通过番号刮削数据，包括元数据、封面图、缩略图、背景图。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、整理模式：仅根据女优把电影命名为番号并分类到女优名称的文件夹下。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.2.软链接模式：使用此模式，要以管理员身份运行。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 刮削完不移动视频，而是在相应目录创建软链接（类似于快捷方式），方便PT下载完既想刮削又想继续上传的仓鼠党同志。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 但是，只能在媒体库展示，不能在媒体库播放。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.3.调试模式</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 输出番号的元数据，包括封面，导演，演员，简介等。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.4.排除目录</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 在多层目录刮削时排除所填目录。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.5.视频目录</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 要整理的视频的目录，会遍历此目录下的所有视频，包括子目录中。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.6.命名规则</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、目录命名：存放视频数据的目录名，支持多层目录，支持自定义符号，例：[actor]/studio/number-【title】。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、视频标题（媒体库中）：nfo中的标题命名。例：number-[title]。可以自定义符号。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、视频标题（本地文件）：本地视频、图片的命名。例：number-[title]。可以自定义符号。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">           4、可选项为title（片名）、actor（演员）、studio（制作商）、director（导演）、release（发售日）、year（发行年份）、number（番号）、runtime（时长）、series（系列）、publisher（发行商）</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.7.代理设置</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、代理</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> proxy=127.0.0.1:1080</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> proxy行设置本地代理地址和端口，支持Shadowxxxx/X,V2XXX本地代理端口，代理软件开全局模式           ,建议使用日本代理。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果一直报Connect Failed! Please check your Proxy or           Network!错误，请检查端口号是否正确，或者把proxy=后面的地址和端口删除，并开启代理软件全局模式，或者重启电脑，代理软件，网卡。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、连接超时重试设置</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> timeout=10 </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 10为超时重试时间 单位：秒，可选范围3-10</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、连接重试次数设置</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> retry=3 </span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3即为重试次数，可选范围2-5</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.8.媒体库选择</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果是PLEX，请安装插件：XBMCnfoMoviesImporter</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.9.排除指定字符和目录，字符串</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 1、排除字符:指定字符删除，例如排除字符： \\()，删除创建文件夹时的\\()字符</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 2、排除目录:指定目录，例如排除目录： failed,JAV_output，多目录刮削时跳过failed,JAV_output</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 3、排除字符串:提取番号时，先删除指定字符串，提高成功率，字符串之间用\',\'隔开。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.10.网站选择</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 可以使用所有网站，或者指定网站（avsox,javbus,dmm,javdb,fc2club，mgstage）进行刮削。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 仅使用javdb进行刮削，尽量不要用，刮削30左右会被JAVDB封IP一段时间。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.11.保存日志</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 开启后日志保存在程序目录的Log目录下的txt文件内，每次运行会产生一个txt文件，txt文件可以删除，不影响程序运行。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\';\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.12.失败后移动文件</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> 如果刮削不到影片信息，可选择不移动视频，或者自动移动到失败输出目录中。</span><span style=\" font-family:\'Microsoft YaHei UI\';\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span><span style=\" font-family:\'Microsoft YaHei UI\';\">       </span></p></body></html>"))
         self.pushButton_main.setText(_translate("MDCx", " 主界面"))
         self.pushButton_log.setText(_translate("MDCx", " 日志"))
         self.pushButton_tool.setText(_translate("MDCx", " 工具"))

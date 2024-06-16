@@ -54,6 +54,8 @@ class MyMAinWindow(QMainWindow):
     set_javdb_cookie = pyqtSignal(str)  # 加载javdb cookie文本内容到设置页面
     set_javbus_cookie = pyqtSignal(str)  # 加载javbus cookie文本内容到设置页面
     set_javbus_status = pyqtSignal(str)  # javbus 检查状态更新
+    set_fc2_cookie = pyqtSignal(str)  # 加载fc2 cookie文本内容到设置页面
+    set_fc2_status = pyqtSignal(str)  # fc2 检查状态更新
     set_label_file_path = pyqtSignal(str)  # 主界面更新路径信息显示
     set_pic_pixmap = pyqtSignal(list, list)  # 主界面显示封面、缩略图
     set_pic_text = pyqtSignal(str)  # 主界面显示封面信息
@@ -2072,43 +2074,43 @@ class MyMAinWindow(QMainWindow):
                         'airav': ['https://www.airav.wiki', ''],
                         'av-wiki': ['https://av-wiki.net', ''],
                         'seesaawiki': ['https://seesaawiki.jp', ''],
-                        'mywife': ['https://mywife.cc', ''], 
+                        'mywife': ['https://mywife.cc', ''],
                         'giga': ['https://www.giga-web.jp', ''],
                         'kin8': ['https://www.kin8tengoku.com', ''],
-                        'fantastica': ['http://fantastica-vr.com', ''], 
+                        'fantastica': ['http://fantastica-vr.com', ''],
                         'faleno': ['https://faleno.jp', ''],
-                        'dahlia': ['https://dahlia-av.jp', ''], 
+                        'dahlia': ['https://dahlia-av.jp', ''],
                         'prestige': ['https://www.prestige-av.com', ''],
-                        's1s1s1': ['https://s1s1s1.com', ''], 
+                        's1s1s1': ['https://s1s1s1.com', ''],
                         'moodyz': ['https://moodyz.com', ''],
                         'madonna': ['https://www.madonna-av.com', ''],
                         'wanz-factory': ['https://www.wanz-factory.com', ''],
-                        'ideapocket': ['https://ideapocket.com', ''], 
+                        'ideapocket': ['https://ideapocket.com', ''],
                         'kirakira': ['https://kirakira-av.com', ''],
-                        'ebody': ['https://www.av-e-body.com', ''], 
+                        'ebody': ['https://www.av-e-body.com', ''],
                         'bi-av': ['https://bi-av.com', ''],
-                        'premium': ['https://premium-beauty.com', ''], 
+                        'premium': ['https://premium-beauty.com', ''],
                         'miman': ['https://miman.jp', ''],
-                        'tameikegoro': ['https://tameikegoro.jp', ''], 
+                        'tameikegoro': ['https://tameikegoro.jp', ''],
                         'fitch': ['https://fitch-av.com', ''],
-                        'kawaiikawaii': ['https://kawaiikawaii.jp', ''], 
+                        'kawaiikawaii': ['https://kawaiikawaii.jp', ''],
                         'befreebe': ['https://befreebe.com', ''],
-                        'muku': ['https://muku.tv', ''], 
+                        'muku': ['https://muku.tv', ''],
                         'attackers': ['https://attackers.net', ''],
-                        'mko-labo': ['https://mko-labo.net', ''], 
+                        'mko-labo': ['https://mko-labo.net', ''],
                         'dasdas': ['https://dasdas.jp', ''],
-                        'mvg': ['https://mvg.jp', ''], 
+                        'mvg': ['https://mvg.jp', ''],
                         'opera': ['https://av-opera.jp', ''],
-                        'oppai': ['https://oppai-av.com', ''], 
+                        'oppai': ['https://oppai-av.com', ''],
                         'v-av': ['https://v-av.com', ''],
-                        'to-satsu': ['https://to-satsu.com', ''], 
+                        'to-satsu': ['https://to-satsu.com', ''],
                         'bibian': ['https://bibian-av.com', ''],
-                        'honnaka': ['https://honnaka.jp', ''], 
+                        'honnaka': ['https://honnaka.jp', ''],
                         'rookie': ['https://rookie-av.jp', ''],
-                        'nanpa': ['https://nanpa-japan.jp', ''], 
+                        'nanpa': ['https://nanpa-japan.jp', ''],
                         'hajimekikaku': ['https://hajimekikaku.com', ''],
                         'hhh-av': ['https://hhh-av.com', '']}
-            
+
             for website in config.SUPPORTED_WEBSITES:
                 if hasattr(config, f"{website}_website"):
                     signal.show_net_info(f"   ⚠️{website} 使用自定义网址：{getattr(config, f'{website}_website')}")
@@ -2341,6 +2343,55 @@ class MyMAinWindow(QMainWindow):
         self.show_log_text(tips.replace('❌', ' ❌ JavBus').replace('✅', ' ✅ JavBus'))
         self.set_javbus_status.emit(tips)
         # self.Ui.pushButton_check_javbus_cookie.setEnabled(True)
+        return tips
+
+    # fc2 cookie
+    def pushButton_check_fc2_cookie_clicked(self):
+        try:
+            t = threading.Thread(target=self._check_fc2_cookie)
+            t.start()  # 启动线程,即让线程开始执行
+        except:
+            signal.show_traceback_log(traceback.format_exc())
+            self.show_log_text(traceback.format_exc())
+
+    def _check_fc2_cookie(self):
+        self.set_fc2_status.emit('⏳ 正在检测中...')
+
+        tips = '✅ 连接正常！'
+        input_cookie = self.Ui.plainTextEdit_cookie_fc2.toPlainText()
+        cookies = {'cookie': config.fc2}
+        if input_cookie:
+            cookies = {'cookie': input_cookie}
+        headers_o = config.headers
+        headers = {
+            'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,ja;q=0.6',
+        }
+        headers.update(headers_o)
+        fc2_url = getattr(config, 'fc2_website', 'https://adult.contents.fc2.com')
+
+        try:
+            result, response = get_html(fc2_url, headers=headers, cookies=cookies)
+
+            if not result:
+                tips = f'❌ 连接失败！请检查网络或代理设置！ {response}'
+            elif 'password' in response:
+                if input_cookie:
+                    tips = '❌ Cookie 无效！'
+                else:
+                    tips = '❌ 当前节点需要 Cookie 才能刮削！请填写 Cookie 或更换节点！'
+            #  已登录，有登出按钮
+            elif '/lk/services/id/logout' in response:
+                self.pushButton_save_config_clicked()
+                tips = '✅ 连接正常！Cookie 已保存！'
+            #  存在推荐板块
+            elif 'Topcontents_Cntall' in response:
+                tips = '✅ 连接正常！网站访问无需 cookie'
+
+        except Exception as e:
+            tips = f'❌ 连接失败！请检查网络或代理设置！ {e}'
+
+        self.show_log_text(tips.replace('❌', ' ❌ FC2').replace('✅', ' ✅ FC2'))
+        self.set_fc2_status.emit(tips)
         return tips
 
     # endregion

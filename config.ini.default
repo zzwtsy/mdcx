@@ -196,8 +196,9 @@ retry = 3
 theporndb_api_token = 
 
 [Cookies]
-javdb = 
-javbus = 
+javdb =
+javbus =
+fc2 =
 
 [other]
 show_web_log = off

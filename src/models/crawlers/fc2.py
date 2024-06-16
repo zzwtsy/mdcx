@@ -97,6 +97,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
     web_info = '\n       '
     log_info += ' \n    🌐 fc2'
     debug_info = ''
+    header = {'cookie': config.fc2}
 
     try:  # 捕获主动抛出的异常
         if not real_url:
@@ -106,7 +107,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         log_info += web_info + debug_info
 
         # ========================================================================番号详情页
-        result, html_content = get_html(real_url)
+        result, html_content = get_html(real_url, headers=header)
         if not result:
             debug_info = '网络请求错误: %s' % html_content
             log_info += web_info + debug_info

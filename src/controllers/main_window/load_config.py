@@ -1036,6 +1036,7 @@ def load_config(self):
         self.Ui.lineEdit_api_token_theporndb.setText(convert_path(config.theporndb_api_token))  # api token
         self.set_javdb_cookie.emit(config.javdb)  # javdb cookie
         self.set_javbus_cookie.emit(config.javbus)  # javbus cookie
+        self.set_fc2_cookie.emit(config.fc2)  # fc2 cookie
         # endregion
 
         # region other

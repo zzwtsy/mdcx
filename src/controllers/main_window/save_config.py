@@ -820,6 +820,7 @@ def save_config(self):
         delattr(config, f"{custom_website_name}_website")
     config.javdb = self.Ui.plainTextEdit_cookie_javdb.toPlainText()  # javdb cookie
     config.javbus = self.Ui.plainTextEdit_cookie_javbus.toPlainText()  # javbus cookie
+    config.fc2 = self.Ui.plainTextEdit_cookie_fc2.toPlainText()  # fc2 cookie
     config.theporndb_api_token = self.Ui.lineEdit_api_token_theporndb.text()  # api token
     if config.javdb:
         config.javdb = config.javdb.replace('locale=en', 'locale=zh')
